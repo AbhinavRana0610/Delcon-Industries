@@ -9,6 +9,15 @@
     });
   }
 
+  // Close nav on close button click
+  var closeBtn = document.querySelector('.nav__close-btn');
+  if (closeBtn && nav && toggle) {
+    closeBtn.addEventListener('click', function() {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   // Slider
   var slider = document.querySelector('.slider');
   if (!slider) return;
