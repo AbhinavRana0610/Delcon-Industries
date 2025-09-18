@@ -179,6 +179,10 @@ h1, h2, h3 { text-align: center; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); }
 .brand__img { height: 46px; width: auto; display: block; }
 .nav { list-style: none; display: flex; gap: 26px; padding: 0; margin: 0; }
+.nav__close { display: none; }
+.nav.is-open .nav__close { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.nav__close-btn { background: transparent; border: none; padding: 8px; cursor: pointer; border-radius: 4px; color: var(--text); transition: var(--transition); }
+.nav__close-btn:hover { background: rgba(0, 86, 179, 0.05); }
 .nav a { 
   position: relative; 
   text-decoration: none; 

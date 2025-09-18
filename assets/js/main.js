@@ -18,6 +18,8 @@
     });
   }
 
+
+
   // Slider
   var slider = document.querySelector('.slider');
   if (!slider) return;
